@@ -7,9 +7,19 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            string resposta = "Hello Word";
-            resposta = resposta.Replace(" ",string.Empty).ToUpper();
-            Console.WriteLine(resposta);
+            PatoDaMontanha pato = new PatoDaMontanha();
+
+            pato.Quack();
+            pato.Voar();
+
+
+            pato.MudarQuack(new DiferenciadoQuack);
+            pato.MudarVoo(new NormalVoo);
+
+            pato.Quack();
+            pato.Voar();
+
+            Console.ReadLine();
         }
     }
 }
