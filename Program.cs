@@ -13,11 +13,8 @@ namespace Program
             pato.Voar();
 
 
-            pato.MudarQuack(new DiferenciadoQuack);
-            pato.MudarVoo(new NormalVoo);
-
-            pato.Quack();
-            pato.Voar();
+            pato.MudarQuack(new DiferenciadoQuack());
+            pato.MudarVoo(new NormalVoo());
 
             Console.ReadLine();
         }
